@@ -1,0 +1,168 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo del body */
+body {
+    background-color: #030303;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 90%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-rows: 40vh auto auto;
+    gap: 20px;
+}
+
+
+.presentacion {
+    margin: 20px 0px;
+    gap: 30px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.6), rgba(0, 0, 0, 0.458)), url("https://wallpapers.com/images/hd/pc-gaming-logos-n60oi65j885nl2a8.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 50px;
+    min-height: 300px;
+    box-shadow: 
+    0 0 5px #00ffea,  
+    0 0 10px #1aff00,  
+    0 0 7px #00d865, 
+    0 0 8px #00ffea,  
+    0 0 6px #00b3ff;
+}
+
+/* Contenido principal */
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Contenedor de conciertos: 3 columnas */
+.contenedor-juegos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+h6{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 
+    0 0 5px #00ffea,  
+    0 0 5px #0b6b0075, 
+    0 0 10px #00d865,  
+    0 0 5px #00dbc9;  
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 100px 55px rgba(81, 81, 81, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 
+    0 0 10px #00ffea,  
+    0 0 20px #1aff00,  
+    0 0 10px #00d865,  
+    0 0 10px #00ffea, 
+    0 0 10px #00b3ff; 
+}
+
+.card .textos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.752);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.Hobbies{
+    border: 2px solid rgb(80, 80, 80);
+    background-image: url("https://media.wired.com/photos/639bf35a24c352e627eccc43/master/pass/Ragnaro%CC%88k-culture-ar1qdh.jpg");
+    margin: 2px 0px 3px 0px;
+    display: flex; 
+    align-items: stretch; 
+    height: 500px;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+}
+
+.IH{
+    background-color: rgba(8, 8, 8, 0.622);
+    height: 100%;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 2);
+    display: flex;
+    flex-direction: column;
+}
+
+.IH h2{
+    margin: 15px;
+    color: #f4f4f4;
+}
+
+.IH p{
+    text-align: left;
+    margin: 30px;
+    color: #f4f4f4;
+    white-space: pre-line;
+}
+
+.espacio{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: stretch;
+    justify-content: end;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #12203E;
+    color: white;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .presentacion{
+        font-size: 20px;
+    }
+    h6{
+        margin: 40px 0px 20px 0px;
+        font-size: 25px;
+    }
+}
+
+
